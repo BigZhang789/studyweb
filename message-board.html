@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>留言板 - ConDew留学指导</title>
+    <meta name="description" content="在ConDew留学指导留言板分享您的想法和建议，我们重视每一位用户的反馈。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏将通过JavaScript动态插入 -->
+    
+    <main class="main-content">
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>留言板</h1>
+                <p>分享您的想法和建议，我们重视每一位用户的反馈</p>
+            </div>
+        </section>
+
+        <!-- 留言表单 -->
+        <section class="section">
+            <div class="container">
+                <div class="message-form">
+                    <h2 style="margin-bottom: 30px; color: #667eea;">发表留言</h2>
+                    <form id="message-form">
+                        <div class="form-group">
+                            <label for="name">姓名 *</label>
+                            <input type="text" id="name" name="name" required placeholder="请输入您的姓名">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">邮箱 *</label>
+                            <input type="email" id="email" name="email" required placeholder="请输入您的邮箱地址">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">咨询主题</label>
+                            <select id="subject" name="subject" style="width: 100%; padding: 12px 15px; border: 2px solid #e9ecef; border-radius: 8px; font-size: 1rem;">
+                                <option value="">请选择咨询主题</option>
+                                <option value="sat-prep">SAT备考咨询</option>
+                                <option value="college-app">大学申请指导</option>
+                                <option value="materials">学习资料相关</option>
+                                <option value="service">服务咨询</option>
+                                <option value="other">其他问题</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">留言内容 *</label>
+                            <textarea id="message" name="message" required placeholder="请输入您的留言内容..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn" style="width: 100%;">提交留言</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- 留言须知 -->
+        <section class="section" style="background-color: white; padding-top: 0;">
+            <div class="container">
+                <div class="card">
+                    <h3>📝 留言须知</h3>
+                    <p>• 请使用真实姓名和邮箱地址，以便我们及时回复您的问题</p>
+                    <p>• 留言内容请保持文明礼貌，不得包含违法违规信息</p>
+                    <p>• 我们会在24小时内回复您的留言或通过邮件联系您</p>
+                    <p>• 优质的建议和反馈将有机会获得免费学习资料奖励</p>
+                    <p>• 如需紧急咨询，请通过联系我们页面的其他方式联系</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ConDew留学指导. 保留所有权利.</p>
+            <p>专业 · 可靠 · 高效</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="js/navigation.js"></script>
+    <script src="js/message-board.js"></script>
+</body>
+</html>

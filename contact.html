@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>联系我们 - ConDew留学指导</title>
+    <meta name="description" content="联系ConDew留学指导，获取专业的留学申请咨询和服务。多种联系方式，随时为您服务。">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- 导航栏将通过JavaScript动态插入 -->
+    
+    <main class="main-content">
+        <!-- 页面头部 -->
+        <section class="page-header">
+            <div class="container">
+                <h1>联系我们</h1>
+                <p>多种联系方式，专业团队随时为您服务</p>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="section">
+            <div class="container">
+                <div class="card-grid">
+                    <div class="card">
+                        <h3>📧 邮箱咨询</h3>
+                        <p><strong>客服邮箱：</strong>service@condew.com</p>
+                        <p><strong>商务合作：</strong>business@condew.com</p>
+                        <p><strong>技术支持：</strong>tech@condew.com</p>
+                        <p style="color: #666; margin-top: 15px;">我们会在24小时内回复您的邮件</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>💬 微信咨询</h3>
+                        <p><strong>微信号：</strong>ConDew2024</p>
+                        <p><strong>客服微信：</strong>ConDew_Service</p>
+                        <p style="color: #666; margin-top: 15px;">添加微信时请备注"留学咨询"</p>
+                        <p style="color: #666;">工作时间：9:00-21:00</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>📱 QQ咨询</h3>
+                        <p><strong>客服QQ：</strong>123456789</p>
+                        <p><strong>咨询QQ群：</strong>987654321</p>
+                        <p style="color: #666; margin-top: 15px;">QQ群内有专业老师答疑</p>
+                        <p style="color: #666;">欢迎加入与其他同学交流</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 常见问题 -->
+        <section class="section" style="background-color: white;">
+            <div class="container">
+                <h2 class="section-title">常见问题</h2>
+                <div class="card">
+                    <h3>❓ 如何购买学习资料？</h3>
+                    <p>点击学习资料页面的"前往购买"按钮，会跳转到闲鱼商品页面，在闲鱼APP中完成购买即可。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>❓ 资料购买后多久能收到？</h3>
+                    <p>电子资料会在付款后24小时内发送到您的邮箱，纸质资料需要3-5个工作日快递配送。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>❓ 是否提供一对一咨询服务？</h3>
+                    <p>是的，我们提供个性化的一对一留学申请咨询服务，需要提前预约，具体收费标准请联系客服。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>❓ 如何加入学习交流群？</h3>
+                    <p>添加客服微信或QQ，备注"加群"，客服会邀请您加入相应的学习交流群。</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 ConDew留学指导. 保留所有权利.</p>
+            <p>专业 · 可靠 · 高效</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript文件 -->
+    <script src="js/navigation.js"></script>
+    <script>
+        // 联系表单提交处理
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('contact-name').value;
+            const email = document.getElementById('contact-email').value;
+            const subject = document.getElementById('contact-subject').value;
+            const message = document.getElementById('contact-message').value;
+            
+            if (!name || !email || !message) {
+                alert('请填写所有必填字段！');
+                return;
+            }
+            
+            // 这里可以添加实际的表单提交逻辑
+            alert('咨询已提交成功！我们会在24小时内回复您。');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
